@@ -1,0 +1,23 @@
+@import './functions';
+// Colors
+$clr-base: #172b4d;
+
+$clr1: #fff;
+$clr2: #ff9e91;
+$clr3: #b9dacc;;
+$clr4: #eeeeee;;
+$clr5: #c9c9c9;;
+$clr6: #808080;;
+$clr7: #fff9f9;;
+$clr8: #a2c9fc;;
+
+$subtle-shadow: 0px 2px 3px #00000023;
+$table-shadow: 2px 2px 3px rgba(0, 0, 0, 0.034);
+$thin-border: 1px solid $clr5 ;
+$layout-width: 680px;
+$main-font: lato;
+// Breakpoints
+$mobile-breakpoint: 460px;
+$narrow-breakpoint: 710px;
+$normal-breakpoint: 960px;
+

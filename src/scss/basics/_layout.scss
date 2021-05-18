@@ -1,0 +1,39 @@
+@import '../setup/variables';
+
+.main-layout {
+  margin: 40px 20px 0;
+}
+
+.todo-layout {
+  padding: 40px;
+  // background-color: $clr1;
+  width: 400px;
+  margin: 40px auto;
+  border-radius: 5px;
+  border: $thin-border;
+
+  p {
+    margin-bottom: 10px;
+
+  }
+}
+
+.list-row-layout {
+  color: $clr6;
+  display: grid;
+  width: $layout-width;
+  grid-template-columns: rem(40px) 1fr rem(40px);
+  column-gap: 10px;
+
+  .list-row-info-layout {
+    grid-column-start: 2;
+    color: $clr6;
+    display: grid;
+    grid-template-columns: 6fr 2fr 2fr;
+  }
+
+  >* {
+
+    padding: 10px;
+  }
+}

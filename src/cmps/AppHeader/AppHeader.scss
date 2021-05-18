@@ -1,0 +1,15 @@
+@import '../../scss/setup/variables';
+@import '../../scss/setup/mixins';
+@import '../../scss/setup/functions';
+@import '../../scss/basics/helpers';
+
+.app-header {
+    padding: rem(10px);
+    > *{
+        font-size: rem(25px);   
+    }
+    
+    .logo{
+        height: rem(30px);
+    }
+}

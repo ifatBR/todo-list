@@ -1,0 +1,20 @@
+@import '../../scss/setup/variables';
+.todo-edit {
+    // border:1px solid $clr5;
+    border-radius:5px;
+    // background-color: $clr1;
+    // box-shadow:$table-shadow;
+
+    .todo-edit-form{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        gap:5px;
+        align-items:center;
+        label{
+            text-align: start;
+        }
+        button{
+            margin-top:20px;
+        }
+    }
+}

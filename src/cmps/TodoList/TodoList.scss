@@ -1,0 +1,27 @@
+@import '../../scss/setup/variables';
+
+.todo-list {
+    margin: 0 auto;
+    width: fit-content;
+    border-radius: 5px;
+    border-spacing: 5px;
+    padding-top: 30px;
+
+    // th {
+    //     font-family: 'lato-bold';
+    //     color: $clr6;
+    // }
+    h3:not(:first-of-type){
+        text-align: center;
+    }
+    .btn.action {
+        width:100%;
+        text-align: center;
+    }
+
+
+    // .headline {
+    //     grid-column: 3 / 4;
+    // }
+
+}

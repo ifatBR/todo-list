@@ -1,0 +1,49 @@
+@import '../../scss/setup/variables';
+@import '../../scss/setup/typography';
+
+.todo-preview {
+    margin-bottom: 5px;
+
+    >* {
+        border-radius: 5px;
+        border: $thin-border;
+    }
+
+    .preview-info {
+        transition: 0.3s;
+
+        &:hover {
+            background-color: lighten($clr5, 5%);
+            color: $clr1;
+            font-weight: bold;
+        }
+    }
+
+    .status {
+        font-family: fa-solid;
+        font-size: rem(20px);
+        color: $clr6;
+        background-color: $clr7;
+        transition: 0.2s;
+
+        &:hover {
+            color: lighten($clr6, 10%);
+        }
+    }
+
+    .done::before {
+        content: "\f14a";
+    }
+
+    .undone::before {
+        content: "\f0c8";
+    }
+
+    p:not(:first-of-type) {
+        text-align: center;
+    }
+
+    .strike {
+        text-decoration: line-through;
+    }
+}

@@ -1,0 +1,13 @@
+@import '../../scss/setup/variables';
+
+.todo-filter {
+    width: $layout-width;
+    margin:auto;
+    label{
+        margin-inline-end:8px;
+
+    }
+    input:not(:last-of-type){
+        margin-inline-end:20px;
+    }
+}
