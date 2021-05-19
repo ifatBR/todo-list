@@ -39,6 +39,8 @@ export function TodoDetail() {
                     <p>{currTodo.description}</p>
                     <h3>Created at:</h3>
                     <p>{utilService.formattedDate(currTodo.createdAt)}</p>
+                    <h3>Importance:</h3>
+                    <p>{currTodo.importance}</p>
                     <h3>Status:</h3>
                     <p>{currTodo.doneAt ? 'Done' : 'Undone'}</p>
                     <div className="flex space-between">

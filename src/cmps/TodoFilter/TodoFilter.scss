@@ -8,6 +8,10 @@
 
     }
     input:not(:last-of-type){
-        margin-inline-end:20px;
+        margin-inline-end:5px;
+    }
+    .btn{
+        height: rem(40px);
+        margin-inline-end:30px;
     }
 }

@@ -1,4 +1,3 @@
-import moment from 'moment';
 export const utilService = {
     getRandomInt,
     makeId,
@@ -21,5 +20,5 @@ function makeId(length = 5) {
 }
 
 function formattedDate(timeStamp) {
-    return moment(parseInt(timeStamp+'000')).format('DD/MM/YYYY');
+    return new Date(timeStamp).toLocaleDateString('he-IL');
 }

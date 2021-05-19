@@ -1,5 +1,4 @@
 import './TodoEdit.scss';
-import moment from 'moment';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getEmptyTodo, getTodoById, saveTodo } from '../../store/actions/todoActions';
@@ -25,8 +24,7 @@ export function TodoEdit() {
 
     
     const onSaveTodo = async (ev) => {
-        const formattedTome = moment().format('YYYY-MM-DD')
-        const createdAt = moment(formattedTome+' 00:00:00').format('X')
+        const createdAt = parseInt(Date.now());
         ev.preventDefault();
         const todoToSave = {...todoToEdit, createdAt}
         try {

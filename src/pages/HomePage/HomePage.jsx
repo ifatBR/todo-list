@@ -12,6 +12,7 @@ export function HomePage() {
     const dispatch = useDispatch();
 
     useEffect(() => {
+        console.log('filterBy changed:', filterBy)
         dispatch(loadTodos(filterBy));
     }, [filterBy]);
 
