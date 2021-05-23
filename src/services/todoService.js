@@ -11,11 +11,9 @@ export const todoService = {
 const TODO_URL = 'todo';
 
 async function query(filterBy) {
-    console.log('filterBy service:', filterBy)
     const date = filterBy?.date ? new Date(filterBy.date + ' 00:00:00').getTime() : '';
+    console.log('date:', date)
     try {
-        // if(filterBy.useDate)
-        console.log('date:', date);
         var queryStr = !filterBy ? '' : `?date=${date}&text=${filterBy.text}`;
         const todos = httpService.get(TODO_URL + queryStr);
         return todos;

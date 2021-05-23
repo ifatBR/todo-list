@@ -6,7 +6,6 @@ export function TodoFilter(props) {
     const resetDateFilter = (ev) => {
         ev.stopPropagation()        
         const newFilter = {...filterBy,date:''}
-        console.log('ev:', ev)
         props.onChangeFilter(newFilter)
     };
 
